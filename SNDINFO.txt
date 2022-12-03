@@ -1,0 +1,126 @@
+
+/*
+//	Item Sounds
+*/
+
+//Crafting
+
+Items/MixHerb "Sounds/Items/Generic/MixHerb.ogg"
+Items/MixGunpowder "Sounds/Items/Generic/MixGunpowder.ogg"
+Items/MixChemFluid "Sounds/Items/Generic/MixChemFluid.ogg"
+
+//Generic
+
+Items/PlasticBag "Sounds/Items/Generic/PlasticBag.ogg"
+Items/GenericUp1 "Sounds/Items/Generic/GenericUp1.ogg"
+Items/GenericUp2 "Sounds/Items/Generic/GenericUp2.ogg"
+Items/GenericUp3 "Sounds/Items/Generic/GenericUp3.ogg"
+Items/GenericDown1 "Sounds/Items/Generic/GenericDown1.ogg"
+Items/GenericDown2 "Sounds/Items/Generic/GenericDown2.ogg"
+$random Items/Generic
+{
+	Items/GenericUp1
+	Items/GenericUp2
+	Items/GenericUp3
+	Items/GenericDown1
+	Items/GenericDown2
+}
+
+//Ingredients
+
+Items/Bowl1 "Sounds/Items/Ingredients/Bowl1.ogg"
+Items/Bowl2 "Sounds/Items/Ingredients/Bowl2.ogg"
+$random Items/Bowl
+{
+	Items/Bowl1
+	Items/Bowl2
+}
+
+Items/Grass1 "Sounds/Items/Ingredients/Grass1.ogg"
+Items/Grass2 "Sounds/Items/Ingredients/Grass2.ogg"
+$random Items/Grass
+{
+	Items/Grass1
+	Items/Grass2
+}
+
+//Materials
+
+Items/ClothingUp1 "Sounds/Items/Materials/ClothingUp1.ogg"
+Items/ClothingUp2 "Sounds/Items/Materials/ClothingUp2.ogg"
+Items/ClothingDown1 "Sounds/Items/Materials/ClothingDown1.ogg"
+Items/ClothingDown2 "Sounds/Items/Materials/ClothingDown2.ogg"
+$random Items/Clothing
+{
+	Items/ClothingUp1
+	Items/ClothingUp2
+	Items/ClothingDown1
+	Items/ClothingDown2
+}
+
+//Medical
+
+Items/PotionUp1 "Sounds/Items/Medical/PotionUp1.ogg"
+Items/PotionUp2 "Sounds/Items/Medical/PotionUp2.ogg"
+$random Items/PotionUp
+{
+	Items/PotionUp1
+	Items/PotionUp2
+}
+
+Items/PotionUse1 "Sounds/Items/Medical/PotionUse1.ogg"
+Items/PotionUse2 "Sounds/Items/Medical/PotionUse2.ogg"
+$random Items/PotionUse
+{
+	Items/PotionUse1
+	Items/PotionUse2
+}
+
+Items/PotionDown1 "Sounds/Items/Medical/PotionDown1.ogg"
+Items/PotionDown2 "Sounds/Items/Medical/PotionDown2.ogg"
+$random Items/PotionDown
+{
+	Items/PotionDown1
+	Items/PotionDown2
+}
+
+Items/Pills "Sounds/Items/Medical/Pills.ogg"
+
+//Provisions
+
+Items/EatPlant1 "Sounds/Items/Provisions/EatPlant1.ogg"
+Items/EatPlant2 "Sounds/Items/Provisions/EatPlant2.ogg"
+$random Items/EatPlant
+{
+	Items/EatPlant1
+	Items/EatPlant2
+}
+
+/*
+//	Weapon Sounds
+*/
+
+//Generic
+
+Weapons/BulletEmpty "Sounds/Weapons/BulletEmpty.ogg"
+Weapons/ShellEmpty "Sounds/Weapons/ShellEmpty.ogg"
+
+Weapons/BulletLoad1 "Sounds/Weapons/BulletLoad1.ogg"
+Weapons/BulletLoad2 "Sounds/Weapons/BulletLoad2.ogg"
+$random Weapons/BulletLoad
+{
+	Weapons/BulletLoad1
+	Weapons/BulletLoad2
+}
+
+Weapons/ShellLoad1 "Sounds/Weapons/ShellLoad1.ogg"
+Weapons/ShellLoad2 "Sounds/Weapons/ShellLoad2.ogg"
+Weapons/ShellLoad3 "Sounds/Weapons/ShellLoad3.ogg"
+Weapons/ShellLoad4 "Sounds/Weapons/ShellLoad4.ogg"
+$random Weapons/ShellLoad
+{
+	Weapons/ShellLoad1
+	Weapons/ShellLoad2
+	Weapons/ShellLoad3
+	Weapons/ShellLoad4
+}
