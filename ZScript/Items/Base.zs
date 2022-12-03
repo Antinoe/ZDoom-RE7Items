@@ -75,7 +75,7 @@ Class CraftingItem : BasicItem
 				A_TakeInventory("Z_SelectedGunpowder",1);
 				A_TakeInventory("Z_SelectedSolidFuel",1);
 				A_TakeInventory("Z_SelectedSupplements",1);
-				A_TakeInventory("Z_SelectedPsycostimulants",1);
+				A_TakeInventory("Z_SelectedPsychostimulants",1);
 				A_TakeInventory("Z_SelectedSteroids",1);
 				A_TakeInventory("Z_SelectedStabilizer",1);
 				//^ Here,we take away all Item Selections so that it isn't
