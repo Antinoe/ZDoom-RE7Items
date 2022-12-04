@@ -179,7 +179,9 @@ Class Psychostimulants : CraftingItem
 		UseItem:
 			TNT1 A 0
 			{
-				A_StartSound("Items/Generic",CHAN_AUTO,CHANF_OVERLAP);
+				A_StartSound("Items/Pills",CHAN_AUTO,CHANF_OVERLAP);
+				A_GiveInventory("PowerPsychostimulants",1);
+				A_TakeInventory("Psychostimulants",1);
 				A_TakeInventory("Z_SelectedPsychostimulants",1);
 			}
 			Fail;
