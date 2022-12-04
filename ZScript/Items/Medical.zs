@@ -30,7 +30,7 @@ Class Herb : CraftingItem
 			{
 				A_SetBlend("Red",0.25,10);
 				A_StartSound("Items/EatPlant",CHAN_AUTO,CHANF_OVERLAP);
-				A_GiveInventory("Stimpack",2);
+				A_GiveInventory("Medikit",1);
 				A_TakeInventory("Z_SelectedHerb",1);
 			}
 			Stop;
@@ -68,7 +68,7 @@ Class FirstAidMed : CraftingItem
 			{
 				A_SetBlend("Red",0.25,10);
 				A_StartSound("Items/PotionUse",CHAN_AUTO,CHANF_OVERLAP);
-				A_GiveInventory("Stimpack",4);
+				A_GiveInventory("Medikit",2);
 				A_TakeInventory("Z_SelectedFirstAidMed",1);
 			}
 			Stop;
@@ -106,7 +106,7 @@ Class StrongFirstAidMed : CraftingItem
 			{
 				A_SetBlend("Red",0.25,10);
 				A_StartSound("Items/PotionUse",CHAN_AUTO,CHANF_OVERLAP);
-				A_GiveInventory("Stimpack",4);
+				A_GiveInventory("Medikit",4);
 				A_TakeInventory("Z_SelectedStrongFirstAidMed",1);
 			}
 			Stop;
