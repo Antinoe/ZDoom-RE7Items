@@ -5,6 +5,7 @@ Class Herb : CraftingItem
 	{
 		Inventory.Icon "HERBA0";
 		Inventory.PickupMessage "A herb that can be found growing naturally in the Louisiana area.";
+		Tag "Herb";
 	}
 	States
 	{
@@ -43,6 +44,7 @@ Class FirstAidMed : CraftingItem
 		Inventory.Icon "MED1A0";
 		Inventory.PickupSound "Items/PotionUp";
 		Inventory.PickupMessage "A bottle of first aid medication.";
+		Tag "First Aid Med";
 	}
 	States
 	{
@@ -80,6 +82,7 @@ Class StrongFirstAidMed : CraftingItem
 		Inventory.Icon "MED2A0";
 		Inventory.PickupSound "Items/PotionUp";
 		Inventory.PickupMessage "A bottle of extra-strength first aid medication.";
+		Tag "Strong First Aid Med";
 	}
 	States
 	{
@@ -117,6 +120,7 @@ Class Supplements : CraftingItem
 		Inventory.Icon "SUP1A0";
 		Inventory.PickupSound "Items/Pills";
 		Inventory.PickupMessage "A tin of small white tablets.";
+		Tag "Supplements";
 	}
 	States
 	{
@@ -153,6 +157,7 @@ Class Psychostimulants : CraftingItem
 		Inventory.Icon "SUP2A0";
 		Inventory.PickupSound "Items/Pills";
 		Inventory.PickupMessage "A tin of small yellow tablets.";
+		Tag "Psychostimulants";
 	}
 	States
 	{
@@ -188,6 +193,7 @@ Class Steroids : CraftingItem
 		Inventory.Icon "SYR1A0";
 		Inventory.PickupSound "Items/Generic";
 		Inventory.PickupMessage "A special syringe containing a yellow liquid.";
+		Tag "Steroids";
 		Scale 0.75;
 	}
 	States
@@ -224,6 +230,7 @@ Class Stabilizer : CraftingItem
 		Inventory.PickupSound "Items/Generic";
 		Inventory.PickupMessage "A special syringe containing a blue liquid.";
 		Scale 0.75;
+		Tag "Stabilizer";
 	}
 	States
 	{

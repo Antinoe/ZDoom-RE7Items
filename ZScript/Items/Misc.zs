@@ -6,6 +6,7 @@ Class ChemFluid : CraftingItem
 		Inventory.Icon "CHM1A0";
 		Inventory.PickupSound "Items/PlasticBag";
 		Inventory.PickupMessage "A bag of yellow liquid.";
+		Tag "Chem Fluid";
 	}
 	States
 	{
@@ -45,6 +46,7 @@ Class StrongChemFluid : CraftingItem
 		Inventory.Icon "CHM2A0";
 		Inventory.PickupSound "Items/PlasticBag";
 		Inventory.PickupMessage "A bag of red liquid.";
+		Tag "Strong Chem Fluid";
 	}
 	States
 	{
@@ -83,6 +85,7 @@ Class SeparatingAgent : CraftingItem
 		Inventory.Icon "CHM3A0";
 		Inventory.PickupSound "Items/PlasticBag";
 		Inventory.PickupMessage "A bag of blue liquid.";
+		Tag "Separating Agent";
 	}
 	States
 	{

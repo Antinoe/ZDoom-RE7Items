@@ -5,6 +5,7 @@ Class Gunpowder : CraftingItem
 	{
 		Inventory.Icon "GUNPA0";
 		Inventory.PickupMessage "A small quantity of loose gunpowder.";
+		Tag "Gunpowder";
 	}
 	States
 	{
@@ -40,6 +41,7 @@ Class SolidFuel : CraftingItem
 	{
 		Inventory.Icon "FUELA0";
 		Inventory.PickupMessage "A block of flammable material.";
+		Tag "Solid Fuel";
 	}
 	States
 	{
