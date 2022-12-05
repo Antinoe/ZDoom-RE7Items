@@ -276,7 +276,7 @@ Class CraftingItem : BasicItem
 				A_SetBlend("White",0.25,10);
 				A_StartSound("Items/PlasticBag",CHAN_AUTO,CHANF_OVERLAP);
 				A_StartSound("Items/PotionUp",CHAN_AUTO,CHANF_OVERLAP);
-				A_Print("Crafted Chem Fluid.",2);
+				A_Print("Crafted Strong Chem Fluid.",2);
 				A_GiveInventory("StrongChemFluid",1);
 				A_GiveInventory("Herb",1);
 				A_TakeInventory("SeparatingAgent",1);
