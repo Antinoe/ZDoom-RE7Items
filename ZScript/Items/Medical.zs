@@ -162,8 +162,8 @@ Class Psychostimulants : CraftingItem
 	States
 	{
 		Spawn:
-			SUP1 A 20;
-			SUP1 A 20 bright;
+			SUP2 A 20;
+			SUP2 A 20 bright;
 			Loop;
 		Use:
 			TNT1 A 0 A_JumpIfInventory("Z_SelectedPsychostimulants",1,"UseItem");
