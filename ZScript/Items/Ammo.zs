@@ -15,8 +15,8 @@ Class Gunpowder : CraftingItem
 			Loop;
 		Use:
 			TNT1 A 0 A_JumpIfInventory("Z_SelectedGunpowder",1,"UseItem");
-			TNT1 A 0 A_JumpIfInventory("Z_SelectedChemFluid",1,"CraftPistolAmmo");
-			TNT1 A 0 A_JumpIfInventory("Z_SelectedStrongChemFluid",1,"CraftEnhancedPistolAmmo");
+			TNT1 A 0 A_JumpIfInventory("Z_SelectedChemFluid",1,"CraftHandgunAmmo");
+			TNT1 A 0 A_JumpIfInventory("Z_SelectedStrongChemFluid",1,"CraftEnhancedHandgunAmmo");
 			TNT1 A 0
 			{
 				A_SetBlend("Black",0.75,10);
@@ -54,8 +54,8 @@ Class SolidFuel : CraftingItem
 			Stop;
 		Use:
 			TNT1 A 0 A_JumpIfInventory("Z_SelectedSolidFuel",1,"UseItem");
-			TNT1 A 0 A_JumpIfInventory("Z_SelectedChemFluid",1,"CraftBurnerAmmo");
-			TNT1 A 0 A_JumpIfInventory("Z_SelectedStrongChemFluid",1,"CraftFlameAmmo");
+			TNT1 A 0 A_JumpIfInventory("Z_SelectedChemFluid",1,"CraftBurnerFuel");
+			TNT1 A 0 A_JumpIfInventory("Z_SelectedStrongChemFluid",1,"CraftFlameRounds");
 			TNT1 A 0
 			{
 				A_SetBlend("Black",0.75,10);

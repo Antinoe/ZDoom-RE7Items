@@ -17,8 +17,8 @@ Class ChemFluid : CraftingItem
 		Use:
 			TNT1 A 0 A_JumpIfInventory("Z_SelectedChemFluid",1,"UseItem");
 			TNT1 A 0 A_JumpIfInventory("Z_SelectedHerb",1,"CraftFirstAidMed");
-			TNT1 A 0 A_JumpIfInventory("Z_SelectedGunpowder",1,"CraftPistolAmmo");
-			TNT1 A 0 A_JumpIfInventory("Z_SelectedSolidFuel",1,"CraftBurnerAmmo");
+			TNT1 A 0 A_JumpIfInventory("Z_SelectedGunpowder",1,"CraftHandgunAmmo");
+			TNT1 A 0 A_JumpIfInventory("Z_SelectedSolidFuel",1,"CraftBurnerFuel");
 			TNT1 A 0 A_JumpIfInventory("Z_SelectedSupplements",1,"CraftPsychostimulants");
 			TNT1 A 0
 			{
@@ -57,9 +57,9 @@ Class StrongChemFluid : CraftingItem
 		Use:
 			TNT1 A 0 A_JumpIfInventory("Z_SelectedStrongChemFluid",1,"UseItem");
 			TNT1 A 0 A_JumpIfInventory("Z_SelectedHerb",1,"CraftStrongFirstAidMed");
-			TNT1 A 0 A_JumpIfInventory("Z_SelectedGunpowder",1,"CraftEnhancedPistolAmmo");
-			TNT1 A 0 A_JumpIfInventory("Z_SelectedSolidFuel",1,"CraftFlameAmmo");
-			TNT1 A 0 A_JumpIfInventory("Z_SelectedSupplements",1,"CraftNeuroAmmo");
+			TNT1 A 0 A_JumpIfInventory("Z_SelectedGunpowder",1,"CraftEnhancedHandgunAmmo");
+			TNT1 A 0 A_JumpIfInventory("Z_SelectedSolidFuel",1,"CraftFlameRounds");
+			TNT1 A 0 A_JumpIfInventory("Z_SelectedSupplements",1,"CraftNeuroRounds");
 			TNT1 A 0
 			{
 				A_SetBlend("Black",0.75,10);

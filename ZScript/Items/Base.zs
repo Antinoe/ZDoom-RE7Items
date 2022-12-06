@@ -149,7 +149,7 @@ Class CraftingItem : BasicItem
 				A_TakeInventory("Z_SelectedSupplements",1);
 			}
 			Fail;
-		CraftPistolAmmo:
+		CraftHandgunAmmo:
 			TNT1 A 0 A_JumpIfInventory("ChemFluid",1,1);
 			Goto CraftFail;
 			TNT1 A 0 A_JumpIfInventory("Gunpowder",1,1);
@@ -161,7 +161,7 @@ Class CraftingItem : BasicItem
 				A_StartSound("Items/Bowl",CHAN_AUTO,CHANF_OVERLAP);
 				A_StartSound("Items/MixGunpowder",CHAN_AUTO,CHANF_OVERLAP);
 				A_StartSound("Weapons/BulletEmpty",CHAN_AUTO,CHANF_OVERLAP);
-				A_Print("Crafted Pistol Rounds.",2);
+				A_Print("Crafted Handgun Ammo.",2);
 				A_SpawnItem("Clip",1);
 				A_TakeInventory("ChemFluid",1);
 				A_TakeInventory("Gunpowder",1);
@@ -169,7 +169,7 @@ Class CraftingItem : BasicItem
 				A_TakeInventory("Z_SelectedGunpowder",1);
 			}
 			Fail;
-		CraftEnhancedPistolAmmo:
+		CraftEnhancedHandgunAmmo:
 			TNT1 A 0 A_JumpIfInventory("StrongChemFluid",1,1);
 			Goto CraftFail;
 			TNT1 A 0 A_JumpIfInventory("Gunpowder",1,1);
@@ -181,7 +181,7 @@ Class CraftingItem : BasicItem
 				A_StartSound("Items/Bowl",CHAN_AUTO,CHANF_OVERLAP);
 				A_StartSound("Items/MixGunpowder",CHAN_AUTO,CHANF_OVERLAP);
 				A_StartSound("Weapons/ShellEmpty",CHAN_AUTO,CHANF_OVERLAP);
-				A_Print("Crafted Enhanced Pistol Rounds.",2);
+				A_Print("Crafted Enhanced Handgun Ammo.",2);
 				A_SpawnItem("ClipBox",1);
 				A_TakeInventory("StrongChemFluid",1);
 				A_TakeInventory("Gunpowder",1);
@@ -189,7 +189,7 @@ Class CraftingItem : BasicItem
 				A_TakeInventory("Z_SelectedGunpowder",1);
 			}
 			Fail;
-		CraftBurnerAmmo:
+		CraftBurnerFuel:
 			TNT1 A 0 A_JumpIfInventory("ChemFluid",1,1);
 			Goto CraftFail;
 			TNT1 A 0 A_JumpIfInventory("SolidFuel",1,1);
@@ -208,7 +208,7 @@ Class CraftingItem : BasicItem
 				A_TakeInventory("Z_SelectedSolidFuel",1);
 			}
 			Fail;
-		CraftFlameAmmo:
+		CraftFlameRounds:
 			TNT1 A 0 A_JumpIfInventory("StrongChemFluid",1,1);
 			Goto CraftFail;
 			TNT1 A 0 A_JumpIfInventory("SolidFuel",1,1);
@@ -226,7 +226,7 @@ Class CraftingItem : BasicItem
 				A_TakeInventory("Z_SelectedSolidFuel",1);
 			}
 			Fail;
-		CraftNeuroAmmo:
+		CraftNeuroRounds:
 			TNT1 A 0 A_JumpIfInventory("StrongChemFluid",1,1);
 			Goto CraftFail;
 			TNT1 A 0 A_JumpIfInventory("Supplements",1,1);

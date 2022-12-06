@@ -131,7 +131,7 @@ Class Supplements : CraftingItem
 		Use:
 			TNT1 A 0 A_JumpIfInventory("Z_SelectedSupplements",1,"UseItem");
 			TNT1 A 0 A_JumpIfInventory("Z_SelectedChemFluid",1,"CraftPsychostimulants");
-			TNT1 A 0 A_JumpIfInventory("Z_SelectedStrongChemFluid",1,"CraftNeuroAmmo");
+			TNT1 A 0 A_JumpIfInventory("Z_SelectedStrongChemFluid",1,"CraftNeuroRounds");
 			TNT1 A 0
 			{
 				A_SetBlend("Black",0.75,10);
