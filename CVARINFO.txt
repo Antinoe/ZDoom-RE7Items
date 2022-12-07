@@ -1,0 +1,2 @@
+
+server int re7_compat = 0;

@@ -1,0 +1,19 @@
+
+AddOptionMenu "OptionsMenu"
+{
+	StaticText ""
+	Submenu "RE7 Items Options","RE7ItemsMenu"
+}
+
+Optionmenu "RE7ItemsMenu"
+{
+	StaticText "WORK IN PROGRESS. OPTIONS BELOW ARE CURRENTLY NON-FUNCTIONAL."
+	Option "Mod Integration","re7_compat","ModCompat"
+}
+
+//Mod Integration
+OptionValue "ModCompat"
+{
+   0,"Disabled"
+   1,"Aracnocide"
+}
