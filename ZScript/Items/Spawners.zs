@@ -85,9 +85,11 @@ Class RE7HandgunAmmoSpawner : Actor
 	States
 	{
 		Spawn:
-			TNT1 A 0
+			TNT1 A 0 NoDelay
 			{
-				A_SpawnItem("Clip",1);
+				A_SpawnItem("Clip");
+				A_Print("Maybe this is working..",20);
+				
 				/*
 				if (CVAR.GetCVAR("re7_compat") = 0)
 				{
@@ -110,7 +112,7 @@ Class RE7EnhancedHandgunAmmoSpawner : Actor
 	States
 	{
 		Spawn:
-			TNT1 A 0
+			TNT1 A 0 NoDelay
 			{
 				A_SpawnItem("Shell",1);
 				/*
@@ -135,7 +137,7 @@ Class RE7BurnerFuelSpawner : Actor
 	States
 	{
 		Spawn:
-			TNT1 A 0
+			TNT1 A 0 NoDelay
 			{
 				A_SpawnItem("Cell",1);
 				/*
@@ -160,7 +162,7 @@ Class RE7FlameRoundsSpawner : Actor
 	States
 	{
 		Spawn:
-			TNT1 A 0
+			TNT1 A 0 NoDelay
 			{
 				A_SpawnItem("RocketAmmo",2);
 				/*
@@ -185,7 +187,7 @@ Class RE7NeuroRoundsSpawner : Actor
 	States
 	{
 		Spawn:
-			TNT1 A 0
+			TNT1 A 0 NoDelay
 			{
 				A_SpawnItem("RocketAmmo",2);
 				/*
