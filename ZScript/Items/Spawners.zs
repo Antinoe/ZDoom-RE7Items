@@ -88,8 +88,6 @@ Class RE7HandgunAmmoSpawner : Actor
 			TNT1 A 0 NoDelay
 			{
 				A_SpawnItem("Clip");
-				A_Print("Maybe this is working..",20);
-				
 				/*
 				if (CVAR.GetCVAR("re7_compat") = 0)
 				{
