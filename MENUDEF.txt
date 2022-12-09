@@ -8,12 +8,75 @@ AddOptionMenu "OptionsMenu"
 Optionmenu "RE7ItemsMenu"
 {
 	StaticText "WORK IN PROGRESS. OPTIONS BELOW ARE CURRENTLY NON-FUNCTIONAL."
-	Option "Mod Integration","re7_compat","ModCompat"
+	Option "Handgun Ammo Replacement","sv_re7_handgunammoreplacement","HandgunAmmoReplacement"
+	Option "Enhanced Handgun Ammo Replacement","sv_re7_enhancedhandgunammoreplacement","EnhancedHandgunAmmoReplacement"
+	Option "Burner Fuel Replacement","sv_re7_burnerfuelreplacement","BurnerFuelReplacement"
+	Option "Flame Rounds Replacement","sv_re7_flameroundsreplacement","FlameRoundsReplacement"
+	Option "Neuro Rounds Replacement","sv_re7_neuroroundsreplacement","NeuroRoundsReplacement"
 }
 
-//Mod Integration
-OptionValue "ModCompat"
+//Ammo Crafting Replacements
+OptionValue "HandgunAmmoReplacement"
 {
-   0,"Disabled"
-   1,"Aracnocide"
+   0,"Nothing"
+   1,"Clip"
+   2,"Clip Box"
+   3,"Shell"
+   4,"Shell Box"
+   5,"Cell"
+   6,"Cell Pack"
+   7,"Rocket"
+   8,"Rocket Box"
+}
+
+OptionValue "EnhancedHandgunAmmoReplacement"
+{
+   0,"Nothing"
+   1,"Clip"
+   2,"Clip Box"
+   3,"Shell"
+   4,"Shell Box"
+   5,"Cell"
+   6,"Cell Pack"
+   7,"Rocket"
+   8,"Rocket Box"
+}
+
+OptionValue "BurnerFuelReplacement"
+{
+   0,"Nothing"
+   1,"Clip"
+   2,"Clip Box"
+   3,"Shell"
+   4,"Shell Box"
+   5,"Cell"
+   6,"Cell Pack"
+   7,"Rocket"
+   8,"Rocket Box"
+}
+
+OptionValue "FlameRoundsReplacement"
+{
+   0,"Nothing"
+   1,"Clip"
+   2,"Clip Box"
+   3,"Shell"
+   4,"Shell Box"
+   5,"Cell"
+   6,"Cell Pack"
+   7,"Rocket"
+   8,"Rocket Box"
+}
+
+OptionValue "NeuroRoundsReplacement"
+{
+   0,"Nothing"
+   1,"Clip"
+   2,"Clip Box"
+   3,"Shell"
+   4,"Shell Box"
+   5,"Cell"
+   6,"Cell Pack"
+   7,"Rocket"
+   8,"Rocket Box"
 }

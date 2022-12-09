@@ -87,19 +87,38 @@ Class RE7HandgunAmmoSpawner : Actor
 		Spawn:
 			TNT1 A 0 NoDelay
 			{
-				A_SpawnItem("Clip");
-				/*
-				if (CVAR.GetCVAR("re7_compat") = 0)
+				if (sv_re7_handgunammoreplacement == 1)
 				{
 					A_SpawnItem("Clip",1);
 				}
-				//Aracnocide
-				if (CVAR.GetCVAR("re7_compat") = 1)
+				if (sv_re7_handgunammoreplacement == 2)
 				{
-					//Light Pistol Ammo
-					A_SpawnItem("ARAMSPC1",1);
+					A_SpawnItem("ClipBox",1);
 				}
-				*/
+				if (sv_re7_handgunammoreplacement == 3)
+				{
+					A_SpawnItem("Shell",1);
+				}
+				if (sv_re7_handgunammoreplacement == 4)
+				{
+					A_SpawnItem("ShellBox",1);
+				}
+				if (sv_re7_handgunammoreplacement == 5)
+				{
+					A_SpawnItem("Cell",1);
+				}
+				if (sv_re7_handgunammoreplacement == 6)
+				{
+					A_SpawnItem("CellPack",1);
+				}
+				if (sv_re7_handgunammoreplacement == 7)
+				{
+					A_SpawnItem("RocketAmmo",1);
+				}
+				if (sv_re7_handgunammoreplacement == 8)
+				{
+					A_SpawnItem("RocketBox",1);
+				}
 			}
 			Stop;
 	}
@@ -112,19 +131,38 @@ Class RE7EnhancedHandgunAmmoSpawner : Actor
 		Spawn:
 			TNT1 A 0 NoDelay
 			{
-				A_SpawnItem("Shell",1);
-				/*
-				if (CVAR.GetCVAR("re7_compat") = 0)
+				if (sv_re7_enhancedhandgunammoreplacement == 1)
+				{
+					A_SpawnItem("Clip",1);
+				}
+				if (sv_re7_enhancedhandgunammoreplacement == 2)
+				{
+					A_SpawnItem("ClipBox",1);
+				}
+				if (sv_re7_enhancedhandgunammoreplacement == 3)
 				{
 					A_SpawnItem("Shell",1);
 				}
-				//Aracnocide
-				if (CVAR.GetCVAR("re7_compat") = 1)
+				if (sv_re7_enhancedhandgunammoreplacement == 4)
 				{
-					//Heavy Pistol Ammo
-					A_SpawnItem("ARAMSPR1",1);
+					A_SpawnItem("ShellBox",1);
 				}
-				*/
+				if (sv_re7_enhancedhandgunammoreplacement == 5)
+				{
+					A_SpawnItem("Cell",1);
+				}
+				if (sv_re7_enhancedhandgunammoreplacement == 6)
+				{
+					A_SpawnItem("CellPack",1);
+				}
+				if (sv_re7_enhancedhandgunammoreplacement == 7)
+				{
+					A_SpawnItem("RocketAmmo",1);
+				}
+				if (sv_re7_enhancedhandgunammoreplacement == 8)
+				{
+					A_SpawnItem("RocketBox",1);
+				}
 			}
 			Stop;
 	}
@@ -137,19 +175,38 @@ Class RE7BurnerFuelSpawner : Actor
 		Spawn:
 			TNT1 A 0 NoDelay
 			{
-				A_SpawnItem("Cell",1);
-				/*
-				if (CVAR.GetCVAR("re7_compat") = 0)
+				if (sv_re7_burnerfuelreplacement == 1)
+				{
+					A_SpawnItem("Clip",1);
+				}
+				if (sv_re7_burnerfuelreplacement == 2)
+				{
+					A_SpawnItem("ClipBox",1);
+				}
+				if (sv_re7_burnerfuelreplacement == 3)
+				{
+					A_SpawnItem("Shell",1);
+				}
+				if (sv_re7_burnerfuelreplacement == 4)
+				{
+					A_SpawnItem("ShellBox",1);
+				}
+				if (sv_re7_burnerfuelreplacement == 5)
 				{
 					A_SpawnItem("Cell",1);
 				}
-				//Aracnocide
-				if (CVAR.GetCVAR("re7_compat") = 1)
+				if (sv_re7_burnerfuelreplacement == 6)
 				{
-					//Rifle Ammo
-					A_SpawnItem("ARAMSPH1",1);
+					A_SpawnItem("CellPack",1);
 				}
-				*/
+				if (sv_re7_burnerfuelreplacement == 7)
+				{
+					A_SpawnItem("RocketAmmo",1);
+				}
+				if (sv_re7_burnerfuelreplacement == 8)
+				{
+					A_SpawnItem("RocketBox",1);
+				}
 			}
 			Stop;
 	}
@@ -162,19 +219,38 @@ Class RE7FlameRoundsSpawner : Actor
 		Spawn:
 			TNT1 A 0 NoDelay
 			{
-				A_SpawnItem("RocketAmmo",2);
-				/*
-				if (CVAR.GetCVAR("re7_compat") = 0)
+				if (sv_re7_flameroundsreplacement == 1)
 				{
-					A_SpawnItem("RocketAmmo",2);
+					A_SpawnItem("Clip",1);
 				}
-				//Aracnocide
-				if (CVAR.GetCVAR("re7_compat") = 1)
+				if (sv_re7_flameroundsreplacement == 2)
 				{
-					//Explosive Ammo
-					A_SpawnItem("ARAMSPX1",1);
+					A_SpawnItem("ClipBox",1);
 				}
-				*/
+				if (sv_re7_flameroundsreplacement == 3)
+				{
+					A_SpawnItem("Shell",1);
+				}
+				if (sv_re7_flameroundsreplacement == 4)
+				{
+					A_SpawnItem("ShellBox",1);
+				}
+				if (sv_re7_flameroundsreplacement == 5)
+				{
+					A_SpawnItem("Cell",1);
+				}
+				if (sv_re7_flameroundsreplacement == 6)
+				{
+					A_SpawnItem("CellPack",1);
+				}
+				if (sv_re7_flameroundsreplacement == 7)
+				{
+					A_SpawnItem("RocketAmmo",1);
+				}
+				if (sv_re7_flameroundsreplacement == 8)
+				{
+					A_SpawnItem("RocketBox",1);
+				}
 			}
 			Stop;
 	}
@@ -187,19 +263,38 @@ Class RE7NeuroRoundsSpawner : Actor
 		Spawn:
 			TNT1 A 0 NoDelay
 			{
-				A_SpawnItem("RocketAmmo",2);
-				/*
-				if (CVAR.GetCVAR("re7_compat") = 0)
+				if (sv_re7_neuroroundsreplacement == 1)
 				{
-					A_SpawnItem("RocketAmmo",2);
+					A_SpawnItem("Clip",1);
 				}
-				//Aracnocide
-				if (CVAR.GetCVAR("re7_compat") = 1)
+				if (sv_re7_neuroroundsreplacement == 2)
 				{
-					//Throwable Ammo
-					A_SpawnItem("ARAMSPT2",1);
+					A_SpawnItem("ClipBox",1);
 				}
-				*/
+				if (sv_re7_neuroroundsreplacement == 3)
+				{
+					A_SpawnItem("Shell",1);
+				}
+				if (sv_re7_neuroroundsreplacement == 4)
+				{
+					A_SpawnItem("ShellBox",1);
+				}
+				if (sv_re7_neuroroundsreplacement == 5)
+				{
+					A_SpawnItem("Cell",1);
+				}
+				if (sv_re7_neuroroundsreplacement == 6)
+				{
+					A_SpawnItem("CellPack",1);
+				}
+				if (sv_re7_neuroroundsreplacement == 7)
+				{
+					A_SpawnItem("RocketAmmo",1);
+				}
+				if (sv_re7_neuroroundsreplacement == 8)
+				{
+					A_SpawnItem("RocketBox",1);
+				}
 			}
 			Stop;
 	}
