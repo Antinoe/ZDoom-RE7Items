@@ -1,4 +1,8 @@
 
+server int sv_re7_herbhealamount = 25;
+server int sv_re7_firstaidmedhealamount = 50;
+server int sv_re7_strongfirstaidmedhealamount = 100;
+
 server int sv_re7_handgunammoreplacement = 1;
 server int sv_re7_enhancedhandgunammoreplacement = 3;
 server int sv_re7_burnerfuelreplacement = 5;
