@@ -309,6 +309,7 @@ Class PowerPsychostimulants : PowerProtection
 {
 	Default
 	{
+		+INVENTORY.ADDITIVETIME;
 		Powerup.Duration -60;
 		Inventory.Icon "SUP2A0";
 	}
