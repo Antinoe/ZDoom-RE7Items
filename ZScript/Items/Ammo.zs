@@ -4,6 +4,7 @@ Class Gunpowder : CraftingItem
 	Default
 	{
 		Inventory.Icon "GUNPA0";
+		Inventory.PickupSound "Items/Bowl";
 		Inventory.PickupMessage "A small quantity of loose gunpowder.";
 		Tag "Gunpowder";
 	}
@@ -40,6 +41,7 @@ Class SolidFuel : CraftingItem
 	Default
 	{
 		Inventory.Icon "FUELA0";
+		Inventory.PickupSound "Items/Bowl";
 		Inventory.PickupMessage "A block of flammable material.";
 		Tag "Solid Fuel";
 	}
