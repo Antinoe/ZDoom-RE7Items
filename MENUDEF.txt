@@ -9,6 +9,7 @@ Optionmenu "RE7ItemsMenu"
 {
 	StaticText "General"
 	StaticText ""
+	Option "Enable Item Replacements","sv_re7_enableitemreplacements","EnableItemReplacements"
 	Option "Herb Heal Amount","sv_re7_herbhealamount","HerbHealAmount"
 	Option "First Aid Med Heal Amount","sv_re7_firstaidmedhealamount","FirstAidMedHealAmount"
 	Option "Strong First Aid Med Heal Amount","sv_re7_strongfirstaidmedhealamount","StrongFirstAidMedHealAmount"
@@ -23,6 +24,11 @@ Optionmenu "RE7ItemsMenu"
 }
 
 //General
+OptionValue "EnableItemReplacements"
+{
+   0,"Disabled (WARNING: CRASHES THE GAME AS OF NOW.)"
+   1,"Enabled"
+}
 OptionValue "HerbHealAmount"
 {
    5,"5 HP"

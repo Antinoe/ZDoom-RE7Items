@@ -3,76 +3,100 @@
 //	Items
 */
 
-Class ChemicalSpawner : RandomSpawner
+Class RE7RandomSpawner : RandomSpawner
 {
 	Default
 	{
 		DropItem "Chemfluid";
 		DropItem "StrongChemfluid";
 		DropItem "SeparatingAgent";
-	}
-}
-
-Class IngredientSpawner : RandomSpawner
-{
-	Default
-	{
 		DropItem "Herb";
 		DropItem "Supplements";
 		DropItem "Psychostimulants";
-	}
-}
-
-Class MaterialSpawner : RandomSpawner
-{
-	Default
-	{
 		DropItem "Gunpowder";
 		DropItem "SolidFuel";
-	}
-}
-
-Class MedicalSpawner : RandomSpawner
-{
-	Default
-	{
 		DropItem "FirstAidMed";
 		DropItem "StrongFirstAidMed";
 	}
 }
 
-Class HealthBonusSpawner : RandomSpawner replaces HealthBonus
+Class HealthBonusSpawner : Actor replaces HealthBonus
 {
-	Default
+	States
 	{
-		DropItem "ChemicalSpawner";
-		DropItem "IngredientSpawner";
+		Spawn:
+			TNT1 A 0 NoDelay
+			{
+				if (sv_re7_enableitemreplacements == 0)
+				{
+					A_SpawnItem("HealthBonus",1);
+				}
+				if (sv_re7_enableitemreplacements == 1)
+				{
+					A_SpawnItem("RE7RandomSpawner",1);
+				}
+			}
+			Stop;
 	}
 }
 
-Class ArmorBonusSpawner : RandomSpawner replaces ArmorBonus
+Class ArmorBonusSpawner : Actor replaces ArmorBonus
 {
-	Default
+	States
 	{
-		DropItem "ChemicalSpawner";
-		DropItem "MaterialSpawner";
+		Spawn:
+			TNT1 A 0 NoDelay
+			{
+				if (sv_re7_enableitemreplacements == 0)
+				{
+					A_SpawnItem("ArmorBonus",1);
+				}
+				if (sv_re7_enableitemreplacements == 1)
+				{
+					A_SpawnItem("RE7RandomSpawner",1);
+				}
+			}
+			Stop;
 	}
 }
 
-Class StimpackSpawner : RandomSpawner replaces Stimpack
+Class StimpackSpawner : Actor replaces Stimpack
 {
-	Default
+	States
 	{
-		DropItem "IngredientSpawner";
-		DropItem "MedicalSpawner";
+		Spawn:
+			TNT1 A 0 NoDelay
+			{
+				if (sv_re7_enableitemreplacements == 0)
+				{
+					A_SpawnItem("Stimpack",1);
+				}
+				if (sv_re7_enableitemreplacements == 1)
+				{
+					A_SpawnItem("RE7RandomSpawner",1);
+				}
+			}
+			Stop;
 	}
 }
 
-Class MedikitSpawner : RandomSpawner replaces Medikit
+Class MedikitSpawner : Actor replaces Medikit
 {
-	Default
+	States
 	{
-		DropItem "MedicalSpawner";
+		Spawn:
+			TNT1 A 0 NoDelay
+			{
+				if (sv_re7_enableitemreplacements == 0)
+				{
+					A_SpawnItem("Medikit",1);
+				}
+				if (sv_re7_enableitemreplacements == 1)
+				{
+					A_SpawnItem("RE7RandomSpawner",1);
+				}
+			}
+			Stop;
 	}
 }
 
