@@ -29,6 +29,7 @@ Class Gunpowder : CraftingItem
 		UseItem:
 			TNT1 A 0
 			{
+				A_Print("",0);
 				A_StartSound("Items/Generic",CHAN_AUTO,CHANF_OVERLAP);
 				A_TakeInventory("Z_SelectedGunpowder",1);
 			}
@@ -69,6 +70,7 @@ Class SolidFuel : CraftingItem
 		UseItem:
 			TNT1 A 0
 			{
+				A_Print("",0);
 				A_StartSound("Items/Generic",CHAN_AUTO,CHANF_OVERLAP);
 				A_TakeInventory("Z_SelectedSolidFuel",1);
 			}

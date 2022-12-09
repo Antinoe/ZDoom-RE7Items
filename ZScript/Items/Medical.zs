@@ -28,6 +28,7 @@ Class Herb : CraftingItem
 		UseItem:
 			TNT1 A 0
 			{
+				A_Print("",0);
 				A_SetBlend("Red",0.25,10);
 				A_StartSound("Items/EatPlant",CHAN_AUTO,CHANF_OVERLAP);
 				A_GiveInventory("Medikit",1);
@@ -66,6 +67,7 @@ Class FirstAidMed : CraftingItem
 		UseItem:
 			TNT1 A 0
 			{
+				A_Print("",0);
 				A_SetBlend("Red",0.25,10);
 				A_StartSound("Items/PotionUse",CHAN_AUTO,CHANF_OVERLAP);
 				A_GiveInventory("Medikit",2);
@@ -104,6 +106,7 @@ Class StrongFirstAidMed : CraftingItem
 		UseItem:
 			TNT1 A 0
 			{
+				A_Print("",0);
 				A_SetBlend("Red",0.25,10);
 				A_StartSound("Items/PotionUse",CHAN_AUTO,CHANF_OVERLAP);
 				A_GiveInventory("Medikit",4);
@@ -143,6 +146,7 @@ Class Supplements : CraftingItem
 		UseItem:
 			TNT1 A 0
 			{
+				A_Print("",0);
 				A_StartSound("Items/Generic",CHAN_AUTO,CHANF_OVERLAP);
 				A_TakeInventory("Z_SelectedSupplements",1);
 			}
@@ -179,6 +183,7 @@ Class Psychostimulants : CraftingItem
 		UseItem:
 			TNT1 A 0
 			{
+				A_Print("",0);
 				A_StartSound("Items/Pills",CHAN_AUTO,CHANF_OVERLAP);
 				A_GiveInventory("PowerPsychostimulants",1);
 				A_TakeInventory("Psychostimulants",1);
@@ -217,6 +222,7 @@ Class Steroids : CraftingItem
 		UseItem:
 			TNT1 A 0
 			{
+				A_Print("",0);
 				A_StartSound("Items/Generic",CHAN_AUTO,CHANF_OVERLAP);
 				A_TakeInventory("Z_SelectedSteroids",1);
 			}
@@ -253,6 +259,7 @@ Class Stabilizer : CraftingItem
 		UseItem:
 			TNT1 A 0
 			{
+				A_Print("",0);
 				A_StartSound("Items/Generic",CHAN_AUTO,CHANF_OVERLAP);
 				A_TakeInventory("Z_SelectedStabilizer",1);
 			}

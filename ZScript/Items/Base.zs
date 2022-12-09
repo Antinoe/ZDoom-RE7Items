@@ -22,11 +22,9 @@ Class BasicItem : CustomInventory
 			CLIP A 20 bright;
 			Loop;
 		Use:
-			//Set Timer so that selected item tokens are removed at a certain point.
-			Goto Info;
-		Info:
 			TNT1 A 0
 			{
+				//Set Timer so that selected item tokens are removed at a certain point.
 				/*
 				A_SetBlend("White",0.25,10);
 				A_StartSound("Items/ItemSmall",CHAN_AUTO,CHANF_OVERLAP);

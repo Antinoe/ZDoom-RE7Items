@@ -32,6 +32,7 @@ Class ChemFluid : CraftingItem
 		UseItem:
 			TNT1 A 0
 			{
+				A_Print("",0);
 				A_StartSound("Items/Generic",CHAN_AUTO,CHANF_OVERLAP);
 				A_TakeInventory("Z_SelectedChemFluid",1);
 			}
@@ -71,6 +72,7 @@ Class StrongChemFluid : CraftingItem
 		UseItem:
 			TNT1 A 0
 			{
+				A_Print("",0);
 				A_StartSound("Items/Generic",CHAN_AUTO,CHANF_OVERLAP);
 				A_TakeInventory("Z_SelectedStrongChemFluid",1);
 			}
@@ -109,6 +111,7 @@ Class SeparatingAgent : CraftingItem
 		UseItem:
 			TNT1 A 0
 			{
+				A_Print("",0);
 				A_StartSound("Items/Generic",CHAN_AUTO,CHANF_OVERLAP);
 				A_TakeInventory("Z_SelectedSeparatingAgent",1);
 			}
