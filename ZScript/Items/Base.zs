@@ -262,7 +262,10 @@ Class CraftingItem : BasicItem
 				A_Print("Crafted Chem Fluid.",2);
 				A_GiveInventory("ChemFluid",1);
 				A_GiveInventory("Herb",1);
-				A_TakeInventory("SeparatingAgent",1);
+				if (sv_re7_consumeseparatingagent == 1)
+				{
+					A_TakeInventory("SeparatingAgent",1);
+				}
 				A_TakeInventory("FirstAidMed",1);
 				A_TakeInventory("Z_SelectedSeparatingAgent",1);
 				A_TakeInventory("Z_SelectedFirstAidMed",1);
@@ -281,7 +284,10 @@ Class CraftingItem : BasicItem
 				A_Print("Crafted Strong Chem Fluid.",2);
 				A_GiveInventory("StrongChemFluid",1);
 				A_GiveInventory("Herb",1);
-				A_TakeInventory("SeparatingAgent",1);
+				if (sv_re7_consumeseparatingagent == 1)
+				{
+					A_TakeInventory("SeparatingAgent",1);
+				}
 				A_TakeInventory("StrongFirstAidMed",1);
 				A_TakeInventory("Z_SelectedSeparatingAgent",1);
 				A_TakeInventory("Z_SelectedStrongFirstAidMed",1);
@@ -300,7 +306,10 @@ Class CraftingItem : BasicItem
 				A_Print("Crafted Chem Fluid.",2);
 				A_GiveInventory("ChemFluid",1);
 				A_GiveInventory("Supplements",1);
-				A_TakeInventory("SeparatingAgent",1);
+				if (sv_re7_consumeseparatingagent == 1)
+				{
+					A_TakeInventory("SeparatingAgent",1);
+				}
 				A_TakeInventory("Psychostimulants",1);
 				A_TakeInventory("Z_SelectedSeparatingAgent",1);
 				A_TakeInventory("Z_SelectedPsychostimulants",1);
@@ -321,7 +330,10 @@ Class CraftingItem : BasicItem
 				A_Print("Crafted Chem Fluid.",2);
 				A_GiveInventory("ChemFluid",1);
 				A_GiveInventory("Gunpowder",1);
-				A_TakeInventory("SeparatingAgent",1);
+				if (sv_re7_consumeseparatingagent == 1)
+				{
+					A_TakeInventory("SeparatingAgent",1);
+				}
 				A_TakeInventory("Clip",10);
 				A_TakeInventory("Z_SelectedSeparatingAgent",1);
 				A_TakeInventory("Z_SelectedHandgunAmmo",1);
@@ -342,7 +354,10 @@ Class CraftingItem : BasicItem
 				A_Print("Crafted Strong Chem Fluid.",2);
 				A_GiveInventory("StrongChemFluid",1);
 				A_GiveInventory("Gunpowder",1);
-				A_TakeInventory("SeparatingAgent",1);
+				if (sv_re7_consumeseparatingagent == 1)
+				{
+					A_TakeInventory("SeparatingAgent",1);
+				}
 				A_TakeInventory("Shell",10);
 				A_TakeInventory("Z_SelectedSeparatingAgent",1);
 				A_TakeInventory("Z_SelectedEnhancedHandgunAmmo",1);
