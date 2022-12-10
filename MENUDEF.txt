@@ -14,6 +14,7 @@ Optionmenu "RE7ItemsMenu"
 	Option "First Aid Med Heal Amount","sv_re7_firstaidmedhealamount","FirstAidMedHealAmount"
 	Option "Strong First Aid Med Heal Amount","sv_re7_strongfirstaidmedhealamount","StrongFirstAidMedHealAmount"
 	Option "Consume Separating Agent Upon Use","sv_re7_consumeseparatingagent","ConsumeSeparatingAgent"
+	/*
 	StaticText ""
 	StaticText "Crafting Ammo Replacements"
 	StaticText ""
@@ -22,6 +23,7 @@ Optionmenu "RE7ItemsMenu"
 	Option "Burner Fuel Replacement","sv_re7_burnerfuelreplacement","BurnerFuelReplacement"
 	Option "Flame Rounds Replacement","sv_re7_flameroundsreplacement","FlameRoundsReplacement"
 	Option "Neuro Rounds Replacement","sv_re7_neuroroundsreplacement","NeuroRoundsReplacement"
+	*/
 }
 
 //General
@@ -105,6 +107,7 @@ OptionValue "StrongFirstAidMedHealAmount"
    100,"100 HP"
 }
 
+/*
 //Ammo Crafting Replacements
 OptionValue "HandgunAmmoReplacement"
 {
@@ -170,3 +173,4 @@ OptionValue "NeuroRoundsReplacement"
    7,"Rocket"
    8,"Rocket Box"
 }
+*/
