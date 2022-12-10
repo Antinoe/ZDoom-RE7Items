@@ -52,9 +52,6 @@ Class SolidFuel : CraftingItem
 			FUEL A 20;
 			FUEL A 20 bright;
 			Loop;
-		Pickup:
-			TNT1 A 0 A_StartSound("Items/Generic",CHAN_AUTO,CHANF_OVERLAP);
-			Stop;
 		Use:
 			TNT1 A 0 A_JumpIfInventory("Z_SelectedSolidFuel",1,"UseItem");
 			TNT1 A 0 A_JumpIfInventory("Z_SelectedChemFluid",1,"CraftBurnerFuel");
