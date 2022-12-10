@@ -81,6 +81,8 @@ Class CraftingItem : BasicItem
 				A_TakeInventory("Z_SelectedPsychostimulants",1);
 				A_TakeInventory("Z_SelectedSteroids",1);
 				A_TakeInventory("Z_SelectedStabilizer",1);
+				A_TakeInventory("Z_SelectedHandgunAmmo",1);
+				A_TakeInventory("Z_SelectedEnhancedHandgunAmmo",1);
 				//^ Here,we take away all Item Selections so that it isn't
 				//a repititious time of constantly trying to craft every time
 				//a craftable item is used when there lacks required items.
