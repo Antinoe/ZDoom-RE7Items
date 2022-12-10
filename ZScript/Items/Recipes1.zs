@@ -203,7 +203,7 @@ Class CraftingItem : BasicItem
 				A_SetBlend("White",0.25,10);
 				A_StartSound("Items/PlasticBag",CHAN_AUTO,CHANF_OVERLAP);
 				A_StartSound("Items/PotionUp",CHAN_AUTO,CHANF_OVERLAP);
-				A_Print("Crafted Chem Fluid.",2);
+				A_Print("Crafted Chem Fluid and Herb.",2);
 				A_GiveInventory("ChemFluid",1);
 				A_GiveInventory("Herb",1);
 				if (sv_re7_consumeseparatingagent == 1)
@@ -225,7 +225,7 @@ Class CraftingItem : BasicItem
 				A_SetBlend("White",0.25,10);
 				A_StartSound("Items/PlasticBag",CHAN_AUTO,CHANF_OVERLAP);
 				A_StartSound("Items/PotionUp",CHAN_AUTO,CHANF_OVERLAP);
-				A_Print("Crafted Strong Chem Fluid.",2);
+				A_Print("Crafted Strong Chem Fluid and Herb.",2);
 				A_GiveInventory("StrongChemFluid",1);
 				A_GiveInventory("Herb",1);
 				if (sv_re7_consumeseparatingagent == 1)
@@ -247,7 +247,7 @@ Class CraftingItem : BasicItem
 				A_SetBlend("White",0.25,10);
 				A_StartSound("Items/PlasticBag",CHAN_AUTO,CHANF_OVERLAP);
 				A_StartSound("Items/Pills",CHAN_AUTO,CHANF_OVERLAP);
-				A_Print("Crafted Chem Fluid.",2);
+				A_Print("Crafted Chem Fluid and Supplements.",2);
 				A_GiveInventory("ChemFluid",1);
 				A_GiveInventory("Supplements",1);
 				if (sv_re7_consumeseparatingagent == 1)
@@ -271,7 +271,7 @@ Class CraftingItem : BasicItem
 				A_StartSound("Items/BulletEmpty",CHAN_AUTO,CHANF_OVERLAP);
 				A_StartSound("Items/Gunpowder",CHAN_AUTO,CHANF_OVERLAP);
 				A_StartSound("Items/Bowl",CHAN_AUTO,CHANF_OVERLAP);
-				A_Print("Crafted Chem Fluid.",2);
+				A_Print("Crafted Chem Fluid and Gunpowder.",2);
 				A_GiveInventory("ChemFluid",1);
 				A_GiveInventory("Gunpowder",1);
 				if (sv_re7_consumeseparatingagent == 1)
@@ -295,7 +295,7 @@ Class CraftingItem : BasicItem
 				A_StartSound("Items/ShellEmpty",CHAN_AUTO,CHANF_OVERLAP);
 				A_StartSound("Items/Gunpowder",CHAN_AUTO,CHANF_OVERLAP);
 				A_StartSound("Items/Bowl",CHAN_AUTO,CHANF_OVERLAP);
-				A_Print("Crafted Strong Chem Fluid.",2);
+				A_Print("Crafted Strong Chem Fluid and Gunpowder.",2);
 				A_GiveInventory("StrongChemFluid",1);
 				A_GiveInventory("Gunpowder",1);
 				if (sv_re7_consumeseparatingagent == 1)
