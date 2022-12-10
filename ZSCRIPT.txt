@@ -1,6 +1,7 @@
 version "4.4.2"
 
 #include "ZScript/Items/Base.zs"
+#include "ZScript/Items/Recipes1.zs"
 #include "ZScript/Items/Spawners.zs"
 #include "ZScript/Items/Misc.zs"
 #include "ZScript/Items/Medical.zs"
