@@ -100,6 +100,8 @@ Class SeparatingAgent : CraftingItem
 			TNT1 A 0 A_JumpIfInventory("Z_SelectedFirstAidMed",1,"UncraftFirstAidMed");
 			TNT1 A 0 A_JumpIfInventory("Z_SelectedStrongFirstAidMed",1,"UncraftStrongFirstAidMed");
 			TNT1 A 0 A_JumpIfInventory("Z_SelectedPsychostimulants",1,"UncraftPsychostimulants");
+			TNT1 A 0 A_JumpIfInventory("Z_SelectedHandgunAmmo",1,"UncraftHandgunAmmo");
+			TNT1 A 0 A_JumpIfInventory("Z_SelectedEnhancedHandgunAmmo",1,"UncraftEnhancedHandgunAmmo");
 			TNT1 A 0
 			{
 				A_SetBlend("Black",0.75,10);
