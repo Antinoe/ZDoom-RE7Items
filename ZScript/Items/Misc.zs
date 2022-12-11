@@ -80,7 +80,7 @@ Class StrongChemFluid : CraftingItem
 	}
 }
 
-Class SeparatingAgent : CraftingItem
+Class SeparatingAgent : UncraftingItem
 {
 	Default
 	{
