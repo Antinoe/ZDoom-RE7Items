@@ -6,8 +6,16 @@ server int sv_re7_consumeseparatingagent = 1;
 
 server int sv_re7_enableitemreplacements = 1;
 
+server int sv_re7_handgunammoamount = 10;
+server int sv_re7_enhancedhandgunammoamount = 10;
+server int sv_re7_burnerfuelamount = 50;
+server int sv_re7_flameroundsamount = 2;
+server int sv_re7_neuroroundsamount = 2;
+
+/*
 server int sv_re7_handgunammoreplacement = 1;
 server int sv_re7_enhancedhandgunammoreplacement = 3;
 server int sv_re7_burnerfuelreplacement = 5;
 server int sv_re7_flameroundsreplacement = 7;
 server int sv_re7_neuroroundsreplacement = 7;
+*/

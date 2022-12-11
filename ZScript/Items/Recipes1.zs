@@ -104,7 +104,7 @@ Class CraftingItem : BasicItem
 				A_StartSound("Weapons/BulletEmpty",CHAN_AUTO,CHANF_OVERLAP);
 				A_Print("Crafted Handgun Ammo.",2);
 				//A_SpawnItem("RE7HandgunAmmoSpawner",1);
-				A_GiveInventory("Clip",10);
+				A_GiveInventory("Clip",sv_re7_handgunammoamount);
 				A_TakeInventory("ChemFluid",1);
 				A_TakeInventory("Gunpowder",1);
 				A_TakeInventory("Z_SelectedChemFluid",1);
@@ -125,7 +125,7 @@ Class CraftingItem : BasicItem
 				A_StartSound("Weapons/ShellEmpty",CHAN_AUTO,CHANF_OVERLAP);
 				A_Print("Crafted Enhanced Handgun Ammo.",2);
 				//A_SpawnItem("RE7EnhancedHandgunAmmoSpawner",1);
-				A_GiveInventory("Shell",5);
+				A_GiveInventory("Shell",sv_re7_enhancedhandgunammoamount);
 				A_TakeInventory("StrongChemFluid",1);
 				A_TakeInventory("Gunpowder",1);
 				A_TakeInventory("Z_SelectedStrongChemFluid",1);
@@ -145,7 +145,7 @@ Class CraftingItem : BasicItem
 				A_StartSound("Items/MixChemFluid",CHAN_AUTO,CHANF_OVERLAP);
 				A_Print("Crafted Burner Fuel.",2);
 				//A_SpawnItem("RE7BurnerFuelSpawner",1);
-				A_GiveInventory("Cell",100);
+				A_GiveInventory("Cell",sv_re7_burnerfuelamount);
 				A_TakeInventory("ChemFluid",1);
 				A_TakeInventory("SolidFuel",1);
 				A_TakeInventory("Z_SelectedChemFluid",1);
@@ -164,7 +164,7 @@ Class CraftingItem : BasicItem
 				A_StartSound("Items/Bowl",CHAN_AUTO,CHANF_OVERLAP);
 				A_Print("Crafted Flame Rounds.",2);
 				//A_SpawnItem("RE7FlameRoundsSpawner",1);
-				A_GiveInventory("RocketAmmo",2);
+				A_GiveInventory("RocketAmmo",sv_re7_flameroundsamount);
 				A_TakeInventory("StrongChemFluid",1);
 				A_TakeInventory("SolidFuel",1);
 				A_TakeInventory("Z_SelectedStrongChemFluid",1);
@@ -183,7 +183,7 @@ Class CraftingItem : BasicItem
 				A_StartSound("Items/Bowl",CHAN_AUTO,CHANF_OVERLAP);
 				A_Print("Crafted Neuro Rounds.",2);
 				//A_SpawnItem("RE7NeuroRoundsSpawner",1);
-				A_GiveInventory("RocketAmmo",2);
+				A_GiveInventory("RocketAmmo",sv_re7_neuroroundsamount);
 				A_TakeInventory("StrongChemFluid",1);
 				A_TakeInventory("Supplements",1);
 				A_TakeInventory("Z_SelectedStrongChemFluid",1);
@@ -262,7 +262,7 @@ Class CraftingItem : BasicItem
 		UncraftHandgunAmmo:
 			TNT1 A 0 A_JumpIfInventory("SeparatingAgent",1,1);
 			Goto CraftFail;
-			TNT1 A 0 A_JumpIfInventory("Clip",10,1);
+			TNT1 A 0 A_JumpIfInventory("Clip",sv_re7_handgunammoamount,1);
 			Goto CraftFail;
 			TNT1 A 0
 			{
@@ -278,7 +278,7 @@ Class CraftingItem : BasicItem
 				{
 					A_TakeInventory("SeparatingAgent",1);
 				}
-				A_TakeInventory("Clip",10);
+				A_TakeInventory("Clip",sv_re7_handgunammoamount);
 				A_TakeInventory("Z_SelectedSeparatingAgent",1);
 				A_TakeInventory("Z_SelectedHandgunAmmo",1);
 			}
@@ -286,7 +286,7 @@ Class CraftingItem : BasicItem
 		UncraftEnhancedHandgunAmmo:
 			TNT1 A 0 A_JumpIfInventory("SeparatingAgent",1,1);
 			Goto CraftFail;
-			TNT1 A 0 A_JumpIfInventory("Shell",10,1);
+			TNT1 A 0 A_JumpIfInventory("Shell",sv_re7_enhancedhandgunammoamount,1);
 			Goto CraftFail;
 			TNT1 A 0
 			{
@@ -302,7 +302,7 @@ Class CraftingItem : BasicItem
 				{
 					A_TakeInventory("SeparatingAgent",1);
 				}
-				A_TakeInventory("Shell",10);
+				A_TakeInventory("Shell",sv_re7_enhancedhandgunammoamount);
 				A_TakeInventory("Z_SelectedSeparatingAgent",1);
 				A_TakeInventory("Z_SelectedEnhancedHandgunAmmo",1);
 			}
