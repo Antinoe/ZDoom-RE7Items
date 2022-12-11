@@ -17,6 +17,8 @@ Class RE7RandomSpawner : RandomSpawner
 		DropItem "Psychostimulants",190,10;
 		DropItem "Gunpowder",190,10;
 		DropItem "SolidFuel",190,10;
+		DropItem "EmptyHandgunAmmo",190,10;
+		DropItem "EmptyEnhancedHandgunAmmo",190,10;
 	}
 }
 

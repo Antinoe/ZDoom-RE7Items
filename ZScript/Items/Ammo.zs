@@ -91,6 +91,15 @@ Class EmptyHandgunAmmo : CraftingItem
 			AMM1 A 20;
 			AMM1 A 20 bright;
 			Loop;
+			/*
+		Pickup:
+			TNT1 A 0 A_JumpIfInventory("EmptyHandgunAmmo",1,"Give");
+			Stop;
+		Give:
+			TNT1 A 0 A_GiveInventory("Gunpowder",2);
+			Stop;
+			*/
+			// Couldn't get this to work.. I'll just leave it here for reference later.
 		Use:
 			TNT1 A 0 A_JumpIfInventory("Z_SelectedHandgunAmmo",1,"UseItem");
 			TNT1 A 0 A_JumpIfInventory("Z_SelectedSeparatingAgent",1,"UncraftHandgunAmmo");
