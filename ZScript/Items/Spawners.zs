@@ -104,7 +104,7 @@ Class MedikitSpawner : Actor replaces Medikit
 //	Ammo
 */
 
-Class ClipSpawner : Actor replaces Clip
+Class ClipSpawner : RandomSpawner //replaces Clip
 {
 	States
 	{
@@ -123,7 +123,7 @@ Class ClipSpawner : Actor replaces Clip
 			Stop;
 	}
 }
-Class ClipBoxSpawner : Actor replaces ClipBox
+Class ClipBoxSpawner : Actor //replaces ClipBox
 {
 	States
 	{
@@ -142,7 +142,7 @@ Class ClipBoxSpawner : Actor replaces ClipBox
 			Stop;
 	}
 }
-Class ShellSpawner : Actor replaces Shell
+Class ShellSpawner : Actor //replaces Shell
 {
 	States
 	{
@@ -161,7 +161,7 @@ Class ShellSpawner : Actor replaces Shell
 			Stop;
 	}
 }
-Class ShellBoxSpawner : Actor replaces ShellBox
+Class ShellBoxSpawner : Actor //replaces ShellBox
 {
 	States
 	{
@@ -180,7 +180,7 @@ Class ShellBoxSpawner : Actor replaces ShellBox
 			Stop;
 	}
 }
-Class CellSpawner : Actor replaces Cell
+Class CellSpawner : Actor //replaces Cell
 {
 	States
 	{
@@ -199,7 +199,7 @@ Class CellSpawner : Actor replaces Cell
 			Stop;
 	}
 }
-Class CellPackSpawner : Actor replaces CellPack
+Class CellPackSpawner : Actor //replaces CellPack
 {
 	States
 	{
@@ -218,7 +218,7 @@ Class CellPackSpawner : Actor replaces CellPack
 			Stop;
 	}
 }
-Class RocketAmmoSpawner : Actor replaces RocketAmmo
+Class RocketAmmoSpawner : Actor //replaces RocketAmmo
 {
 	States
 	{
@@ -237,7 +237,7 @@ Class RocketAmmoSpawner : Actor replaces RocketAmmo
 			Stop;
 	}
 }
-Class RocketBoxSpawner : Actor replaces RocketBox
+Class RocketBoxSpawner : Actor //replaces RocketBox
 {
 	States
 	{
