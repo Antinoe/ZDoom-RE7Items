@@ -262,7 +262,7 @@ Class CraftingItem : BasicItem
 		UncraftHandgunAmmo:
 			TNT1 A 0 A_JumpIfInventory("SeparatingAgent",1,1);
 			Goto CraftFail;
-			TNT1 A 0 A_JumpIfInventory("Clip",1,1);
+			TNT1 A 0 A_JumpIfInventory("Clip",sv_re7_handgunammoamount,1);
 			Goto CraftFail;
 			TNT1 A 0
 			{
@@ -278,7 +278,7 @@ Class CraftingItem : BasicItem
 				{
 					A_TakeInventory("SeparatingAgent",1);
 				}
-				A_TakeInventory("Clip",1);
+				A_TakeInventory("Clip",sv_re7_handgunammoamount);
 				A_TakeInventory("Z_SelectedSeparatingAgent",1);
 				A_TakeInventory("Z_SelectedHandgunAmmo",1);
 			}
@@ -286,7 +286,7 @@ Class CraftingItem : BasicItem
 		UncraftEnhancedHandgunAmmo:
 			TNT1 A 0 A_JumpIfInventory("SeparatingAgent",1,1);
 			Goto CraftFail;
-			TNT1 A 0 A_JumpIfInventory("Shell",1,1);
+			TNT1 A 0 A_JumpIfInventory("Shell",sv_re7_enhancedhandgunammoamount,1);
 			Goto CraftFail;
 			TNT1 A 0
 			{
@@ -302,7 +302,7 @@ Class CraftingItem : BasicItem
 				{
 					A_TakeInventory("SeparatingAgent",1);
 				}
-				A_TakeInventory("Shell",1);
+				A_TakeInventory("Shell",sv_re7_enhancedhandgunammoamount);
 				A_TakeInventory("Z_SelectedSeparatingAgent",1);
 				A_TakeInventory("Z_SelectedEnhancedHandgunAmmo",1);
 			}
