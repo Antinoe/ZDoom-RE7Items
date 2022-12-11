@@ -7,16 +7,16 @@ Class RE7RandomSpawner : RandomSpawner
 {
 	Default
 	{
-		DropItem "Chemfluid";
-		DropItem "StrongChemfluid";
-		DropItem "SeparatingAgent";
-		DropItem "Herb";
-		DropItem "FirstAidMed";
-		DropItem "StrongFirstAidMed";
-		DropItem "Supplements";
-		DropItem "Psychostimulants";
-		DropItem "Gunpowder";
-		DropItem "SolidFuel";
+		DropItem "Chemfluid",190,10;
+		DropItem "StrongChemfluid",190,10;
+		DropItem "SeparatingAgent",190,10;
+		DropItem "Herb",190,10;
+		DropItem "FirstAidMed",190,10;
+		DropItem "StrongFirstAidMed",190,10;
+		DropItem "Supplements",190,10;
+		DropItem "Psychostimulants",190,10;
+		DropItem "Gunpowder",190,10;
+		DropItem "SolidFuel",190,10;
 	}
 }
 
