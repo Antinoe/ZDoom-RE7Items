@@ -6,8 +6,12 @@ Class RE7HandgunAmmoReplacer : CustomInventory
 		Spawn:
 			TNT1 A 0 NoDelay
 			{
-				A_SpawnItem("Clip",1);
+				if (sv_re7_spawnorgiveitems == 1)
+				{
+					A_SpawnItem("Clip",1);
+				}
 			}
+			Stop;
 		Pickup:
 		Use:
 			TNT1 A 0 NoDelay
@@ -25,8 +29,12 @@ Class RE7EnhancedHandgunAmmoReplacer : CustomInventory
 		Spawn:
 			TNT1 A 0 NoDelay
 			{
-				A_SpawnItem("Shell",1);
+				if (sv_re7_spawnorgiveitems == 1)
+				{
+					A_SpawnItem("Shell",1);
+				}
 			}
+			Stop;
 		Pickup:
 		Use:
 			TNT1 A 0 NoDelay
@@ -44,8 +52,12 @@ Class RE7BurnerFuelReplacer : CustomInventory
 		Spawn:
 			TNT1 A 0 NoDelay
 			{
-				A_SpawnItem("Cell",1);
+				if (sv_re7_spawnorgiveitems == 1)
+				{
+					A_SpawnItem("Cell",1);
+				}
 			}
+			Stop;
 		Pickup:
 		Use:
 			TNT1 A 0 NoDelay
@@ -63,8 +75,12 @@ Class RE7FlameRoundsReplacer : CustomInventory
 		Spawn:
 			TNT1 A 0 NoDelay
 			{
-				A_SpawnItem("RocketAmmo",1);
+				if (sv_re7_spawnorgiveitems == 1)
+				{
+					A_SpawnItem("RocketAmmo",1);
+				}
 			}
+			Stop;
 		Pickup:
 		Use:
 			TNT1 A 0 NoDelay
@@ -82,8 +98,12 @@ Class RE7NeuroRoundsReplacer : CustomInventory
 		Spawn:
 			TNT1 A 0 NoDelay
 			{
-				A_SpawnItem("RocketAmmo",1);
+				if (sv_re7_spawnorgiveitems == 1)
+				{
+					A_SpawnItem("RocketAmmo",1);
+				}
 			}
+			Stop;
 		Pickup:
 		Use:
 			TNT1 A 0 NoDelay
