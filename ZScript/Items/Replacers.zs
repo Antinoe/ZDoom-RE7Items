@@ -3,6 +3,11 @@ Class RE7HandgunAmmoReplacer : CustomInventory
 {
 	States
 	{
+		Spawn:
+			TNT1 A 0 NoDelay
+			{
+				A_SpawnItem("Clip",1);
+			}
 		Pickup:
 		Use:
 			TNT1 A 0 NoDelay
@@ -17,6 +22,11 @@ Class RE7EnhancedHandgunAmmoReplacer : CustomInventory
 {
 	States
 	{
+		Spawn:
+			TNT1 A 0 NoDelay
+			{
+				A_SpawnItem("Shell",1);
+			}
 		Pickup:
 		Use:
 			TNT1 A 0 NoDelay
@@ -31,6 +41,11 @@ Class RE7BurnerFuelReplacer : CustomInventory
 {
 	States
 	{
+		Spawn:
+			TNT1 A 0 NoDelay
+			{
+				A_SpawnItem("Cell",1);
+			}
 		Pickup:
 		Use:
 			TNT1 A 0 NoDelay
@@ -45,6 +60,11 @@ Class RE7FlameRoundsReplacer : CustomInventory
 {
 	States
 	{
+		Spawn:
+			TNT1 A 0 NoDelay
+			{
+				A_SpawnItem("RocketAmmo",1);
+			}
 		Pickup:
 		Use:
 			TNT1 A 0 NoDelay
@@ -59,6 +79,11 @@ Class RE7NeuroRoundsReplacer : CustomInventory
 {
 	States
 	{
+		Spawn:
+			TNT1 A 0 NoDelay
+			{
+				A_SpawnItem("RocketAmmo",1);
+			}
 		Pickup:
 		Use:
 			TNT1 A 0 NoDelay

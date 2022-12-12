@@ -104,7 +104,14 @@ Class CraftingItem : BasicItem
 				A_StartSound("Weapons/BulletEmpty",CHAN_AUTO,CHANF_OVERLAP);
 				A_Print("Crafted Handgun Ammo.",2);
 				//A_SpawnItem("RE7HandgunAmmoSpawner",1);
-				A_GiveInventory("RE7HandgunAmmoReplacer",1);
+				if (sv_re7_spawnorgiveitems == 0)
+				{
+					A_GiveInventory("RE7HandgunAmmoReplacer",1);
+				}
+				else
+				{
+					A_SpawnItem("RE7HandgunAmmoReplacer",1);
+				}
 				A_TakeInventory("ChemFluid",1);
 				A_TakeInventory("Gunpowder",1);
 				A_TakeInventory("Z_SelectedChemFluid",1);
@@ -125,8 +132,14 @@ Class CraftingItem : BasicItem
 				A_StartSound("Weapons/ShellEmpty",CHAN_AUTO,CHANF_OVERLAP);
 				A_Print("Crafted Enhanced Handgun Ammo.",2);
 				//A_SpawnItem("RE7EnhancedHandgunAmmoSpawner",1);
-				A_GiveInventory("RE7EnhancedHandgunAmmoReplacer",1);
-				A_TakeInventory("StrongChemFluid",1);
+				if (sv_re7_spawnorgiveitems == 0)
+				{
+					A_GiveInventory("RE7EnhancedHandgunAmmoReplacer",1);
+				}
+				else
+				{
+					A_SpawnItem("RE7EnhancedHandgunAmmoReplacer",1);
+				}
 				A_TakeInventory("Gunpowder",1);
 				A_TakeInventory("Z_SelectedStrongChemFluid",1);
 				A_TakeInventory("Z_SelectedGunpowder",1);
@@ -145,7 +158,14 @@ Class CraftingItem : BasicItem
 				A_StartSound("Items/MixChemFluid",CHAN_AUTO,CHANF_OVERLAP);
 				A_Print("Crafted Burner Fuel.",2);
 				//A_SpawnItem("RE7BurnerFuelSpawner",1);
-				A_GiveInventory("RE7BurnerFuelReplacer",1);
+				if (sv_re7_spawnorgiveitems == 0)
+				{
+					A_GiveInventory("RE7BurnerFuelReplacer",1);
+				}
+				else
+				{
+					A_SpawnItem("RE7BurnerFuelReplacer",1);
+				}
 				A_TakeInventory("ChemFluid",1);
 				A_TakeInventory("SolidFuel",1);
 				A_TakeInventory("Z_SelectedChemFluid",1);
@@ -164,7 +184,14 @@ Class CraftingItem : BasicItem
 				A_StartSound("Items/Bowl",CHAN_AUTO,CHANF_OVERLAP);
 				A_Print("Crafted Flame Rounds.",2);
 				//A_SpawnItem("RE7FlameRoundsSpawner",1);
-				A_GiveInventory("RE7FlameRoundsReplacer",1);
+				if (sv_re7_spawnorgiveitems == 0)
+				{
+					A_GiveInventory("RE7FlameRoundsReplacer",1);
+				}
+				else
+				{
+					A_SpawnItem("RE7FlameRoundsReplacer",1);
+				}
 				A_TakeInventory("StrongChemFluid",1);
 				A_TakeInventory("SolidFuel",1);
 				A_TakeInventory("Z_SelectedStrongChemFluid",1);
@@ -183,7 +210,14 @@ Class CraftingItem : BasicItem
 				A_StartSound("Items/Bowl",CHAN_AUTO,CHANF_OVERLAP);
 				A_Print("Crafted Neuro Rounds.",2);
 				//A_SpawnItem("RE7NeuroRoundsSpawner",1);
-				A_GiveInventory("RE7NeuroRoundsReplacer",1);
+				if (sv_re7_spawnorgiveitems == 0)
+				{
+					A_GiveInventory("RE7NeuroRoundsReplacer",1);
+				}
+				else
+				{
+					A_SpawnItem("RE7NeuroRoundsReplacer",1);
+				}
 				A_TakeInventory("StrongChemFluid",1);
 				A_TakeInventory("Supplements",1);
 				A_TakeInventory("Z_SelectedStrongChemFluid",1);
