@@ -5,7 +5,7 @@ server int sv_re7_strongfirstaidmedhealamount = 100;
 server int sv_re7_consumeseparatingagent = 1;
 
 server int sv_re7_enableitemreplacements = 1;
-server int sv_re7_spawnorgiveitems = 1;
+server int sv_re7_giveorspawnitems = 0;
 
 server int sv_re7_handgunammoamount = 10;
 server int sv_re7_enhancedhandgunammoamount = 10;

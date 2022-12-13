@@ -46,8 +46,8 @@ OptionValue "EnableItemReplacements"
 }
 OptionValue "SpawnItems"
 {
-   0,"Disabled"
-   1,"Enabled"
+   0,"Spawn"
+   1,"Give"
 }
 OptionValue "ConsumeSeparatingAgent"
 {

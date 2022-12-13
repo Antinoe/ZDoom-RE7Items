@@ -6,7 +6,7 @@ Class RE7HandgunAmmoReplacer : CustomInventory
 		Spawn:
 			TNT1 A 0 NoDelay
 			{
-				if (sv_re7_spawnorgiveitems == 1)
+				if (sv_re7_giveorspawnitems == 1)
 				{
 					A_SpawnItem("Clip",1);
 				}
@@ -29,7 +29,7 @@ Class RE7EnhancedHandgunAmmoReplacer : CustomInventory
 		Spawn:
 			TNT1 A 0 NoDelay
 			{
-				if (sv_re7_spawnorgiveitems == 1)
+				if (sv_re7_giveorspawnitems == 1)
 				{
 					A_SpawnItem("Shell",1);
 				}
@@ -52,7 +52,7 @@ Class RE7BurnerFuelReplacer : CustomInventory
 		Spawn:
 			TNT1 A 0 NoDelay
 			{
-				if (sv_re7_spawnorgiveitems == 1)
+				if (sv_re7_giveorspawnitems == 1)
 				{
 					A_SpawnItem("Cell",1);
 				}
@@ -75,7 +75,7 @@ Class RE7FlameRoundsReplacer : CustomInventory
 		Spawn:
 			TNT1 A 0 NoDelay
 			{
-				if (sv_re7_spawnorgiveitems == 1)
+				if (sv_re7_giveorspawnitems == 1)
 				{
 					A_SpawnItem("RocketAmmo",1);
 				}
@@ -98,7 +98,7 @@ Class RE7NeuroRoundsReplacer : CustomInventory
 		Spawn:
 			TNT1 A 0 NoDelay
 			{
-				if (sv_re7_spawnorgiveitems == 1)
+				if (sv_re7_giveorspawnitems == 1)
 				{
 					A_SpawnItem("RocketAmmo",1);
 				}
