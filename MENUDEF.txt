@@ -10,7 +10,7 @@ Optionmenu "RE7ItemsMenu"
 	StaticText "General"
 	StaticText ""
 	Option "Enable Item Replacements","sv_re7_enableitemreplacements","EnableItemReplacements"
-	Option "Spawn or Give Crafted Items","sv_re7_spawnitems","SpawnItems"
+	Option "Give or Spawn Crafted Items?","sv_re7_giveorspawnitems","GiveOrSpawnItems"
 	Option "Herb Heal Amount","sv_re7_herbhealamount","HerbHealAmount"
 	Option "First Aid Med Heal Amount","sv_re7_firstaidmedhealamount","FirstAidMedHealAmount"
 	Option "Strong First Aid Med Heal Amount","sv_re7_strongfirstaidmedhealamount","StrongFirstAidMedHealAmount"
@@ -44,10 +44,10 @@ OptionValue "EnableItemReplacements"
    0,"Disabled (WARNING: CRASHES THE GAME AS OF NOW.)"
    1,"Enabled"
 }
-OptionValue "SpawnItems"
+OptionValue "GiveOrSpawnItems"
 {
-   0,"Spawn"
-   1,"Give"
+   0,"Give"
+   1,"Spawn"
 }
 OptionValue "ConsumeSeparatingAgent"
 {
