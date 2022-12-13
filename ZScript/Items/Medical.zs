@@ -4,6 +4,7 @@ Class Herb : CraftingItem
 	Default
 	{
 		Inventory.Icon "HERBA0";
+		Inventory.PickupSound "Items/Grass";
 		Inventory.PickupMessage "A herb that can be found growing naturally in the Louisiana area.";
 		Tag "Herb";
 	}
