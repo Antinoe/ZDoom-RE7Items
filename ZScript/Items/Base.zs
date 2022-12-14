@@ -69,3 +69,12 @@ Class PowerPsychostimulants : PowerProtection
 		Inventory.Icon "SUP2A0";
 	}
 }
+
+Class UpgradeStaminaRE7 : UpgradeStamina
+{
+	Default
+	{
+		Inventory.Amount 1;
+		Inventory.MaxAmount 200;
+	}
+}
