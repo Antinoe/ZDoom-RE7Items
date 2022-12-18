@@ -1,7 +1,0 @@
-
-Class UncraftingItem : CraftingItem
-{
-	States
-	{
-	}
-}
