@@ -10,7 +10,7 @@ Class BasicItem : CustomInventory
 		+INVENTORY.INVBAR;
 		+INVENTORY.ALWAYSPICKUP;
 		-SOLID;
-		+COUNTITEM;
+		-COUNTITEM;
 		Inventory.PickupSound "Items/Generic";
 		Inventory.Icon "CLIPA0";
 		Tag "Item";
