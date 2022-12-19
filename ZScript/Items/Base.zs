@@ -77,6 +77,15 @@ Class PsychostimulantsItem : PowerInvisibility
 	}
 }
 
+Class UpgradeStaminaRE7 : UpgradeStamina
+{
+	Default
+	{
+		Inventory.Amount 1;
+		Inventory.MaxAmount 200;
+	}
+}
+
 Class DefenseCoinItem : PowerProtection
 {
 	Default
@@ -105,7 +114,7 @@ Class AssaultCoinItem : PowerDamage
 	{
 		+INVENTORY.ADDITIVETIME;
 		Powerup.Duration -60;
-		DamageFactor "Normal", 0.50;
+		DamageFactor "Normal", 2;
 		Inventory.Icon "COINC0";
 	}
 }

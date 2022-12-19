@@ -19,6 +19,8 @@ Class RE7RandomSpawner : RandomSpawner
 		DropItem "SolidFuel",190,10;
 		DropItem "EmptyHandgunAmmo",190,10;
 		DropItem "EmptyEnhancedHandgunAmmo",190,10;
+		DropItem "Steroids",190,10;
+		DropItem "Stabilizer",190,10;
 		DropItem "RustedScrap",190,10;
 		DropItem "WoodenScrap",190,10;
 		DropItem "DefenseCoin",190,10;
