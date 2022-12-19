@@ -84,6 +84,7 @@ Class EmptyHandgunAmmo : CraftingItem
 		Inventory.PickupSound "Items/Clothing";
 		Inventory.PickupMessage "Standard handgun ammo.";
 		Tag "Empty Handgun Ammo Box";
+		Scale 0.50;
 	}
 	States
 	{
@@ -131,6 +132,7 @@ Class EmptyEnhancedHandgunAmmo : CraftingItem
 		Inventory.PickupSound "Items/Clothing";
 		Inventory.PickupMessage "Ammo packed with extra gunpowder, making it more powerful.";
 		Tag "Empty Enhanced Handgun Ammo Box";
+		Scale 0.50;
 	}
 	States
 	{

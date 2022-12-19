@@ -13,9 +13,6 @@ server int sv_re7_burnerfuelamount = 50;
 server int sv_re7_flameroundsamount = 2;
 server int sv_re7_neuroroundsamount = 2;
 
-server int sv_re7_steroidsupgradeamount = 5;
-server int sv_re7_stabilizerupgradeamount = 5;
-
 /*
 server int sv_re7_handgunammoreplacement = 1;
 server int sv_re7_enhancedhandgunammoreplacement = 3;

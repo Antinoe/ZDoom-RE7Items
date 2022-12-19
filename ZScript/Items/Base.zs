@@ -59,8 +59,15 @@ Class Z_SelectedSteroids : Z_DummyItem {}
 Class Z_SelectedStabilizer : Z_DummyItem {}
 Class Z_SelectedHandgunAmmo : Z_DummyItem {}
 Class Z_SelectedEnhancedHandgunAmmo : Z_DummyItem {}
+Class Z_SelectedRustedScrap : Z_DummyItem {}
+Class Z_SelectedWoodenScrap : Z_DummyItem {}
+Class Z_SelectedBattery : Z_DummyItem {}
+Class Z_SelectedDefenseCoin : Z_DummyItem {}
+Class Z_SelectedIronDefenseCoin : Z_DummyItem {}
+Class Z_SelectedAssaultCoin : Z_DummyItem {}
+Class Z_SelectedWoodenBoards : Z_DummyItem {}
 
-Class PowerPsychostimulants : PowerProtection
+Class PsychostimulantsItem : PowerInvisibility
 {
 	Default
 	{
@@ -70,11 +77,48 @@ Class PowerPsychostimulants : PowerProtection
 	}
 }
 
-Class UpgradeStaminaRE7 : UpgradeStamina
+Class DefenseCoinItem : PowerProtection
 {
 	Default
 	{
-		Inventory.Amount 1;
-		Inventory.MaxAmount 200;
+		+INVENTORY.ADDITIVETIME;
+		Powerup.Duration -60;
+		DamageFactor "Normal", 0.75;
+		Inventory.Icon "COINA0";
+	}
+}
+
+Class IronDefenseCoinItem : PowerProtection
+{
+	Default
+	{
+		+INVENTORY.ADDITIVETIME;
+		Powerup.Duration -60;
+		DamageFactor "Normal", 0.50;
+		Inventory.Icon "COINB0";
+	}
+}
+
+Class AssaultCoinItem : PowerDamage
+{
+	Default
+	{
+		+INVENTORY.ADDITIVETIME;
+		Powerup.Duration -60;
+		DamageFactor "Normal", 0.50;
+		Inventory.Icon "COINC0";
+	}
+}
+
+Class WoodenBoardsItem : BasicArmorPickup
+{
+	Default
+	{
+		Armor.SaveAmount 50;
+		Armor.SavePercent 50;
+		Damagefactor "Stab", 0.5;
+		Damagefactor "Cut", 0.5;
+		Damagefactor "Chop", 0.5;
+		Inventory.Icon "WOODB0";
 	}
 }

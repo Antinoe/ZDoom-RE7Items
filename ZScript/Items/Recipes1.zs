@@ -22,6 +22,13 @@ Class CraftingItem : BasicItem
 				A_TakeInventory("Z_SelectedStabilizer",1);
 				A_TakeInventory("Z_SelectedHandgunAmmo",1);
 				A_TakeInventory("Z_SelectedEnhancedHandgunAmmo",1);
+				A_TakeInventory("Z_SelectedRustedScrap",1);
+				A_TakeInventory("Z_SelectedWoodenScrap",1);
+				A_TakeInventory("Z_SelectedBattery",1);
+				A_TakeInventory("Z_SelectedDefenseCoin",1);
+				A_TakeInventory("Z_SelectedIronDefenseCoin",1);
+				A_TakeInventory("Z_SelectedAssaultCoin",1);
+				A_TakeInventory("Z_SelectedWoodenBoards",1);
 				//^ Here,we take away all Item Selections so that it isn't
 				//a repititious time of constantly trying to craft every time
 				//a craftable item is used when there lacks required items.
@@ -187,6 +194,60 @@ Class CraftingItem : BasicItem
 				A_TakeInventory("Supplements",1);
 				A_TakeInventory("Z_SelectedStrongChemFluid",1);
 				A_TakeInventory("Z_SelectedSupplements",1);
+			}
+			Fail;
+		CraftDefenseCoin:
+			TNT1 A 0 A_JumpIfInventory("RustedScrap",1,1);
+			Goto CraftFail;
+			TNT1 A 0 A_JumpIfInventory("ChemFluid",1,1);
+			Goto CraftFail;
+			TNT1 A 0
+			{
+				A_SetBlend("Blue",0.25,10);
+				A_StartSound("Items/Bowl",CHAN_AUTO,CHANF_OVERLAP);
+				A_StartSound("Items/Bowl",CHAN_AUTO,CHANF_OVERLAP);
+				A_Print("Crafted a Defense Coin.",1);
+				A_GiveInventory("DefenseCoin",1);
+				A_TakeInventory("RustedScrap",1);
+				A_TakeInventory("ChemFluid",1);
+				A_TakeInventory("Z_SelectedRustedScrap",1);
+				A_TakeInventory("Z_SelectedChemFluid",1);
+			}
+			Fail;
+		CraftDefenseCoin:
+			TNT1 A 0 A_JumpIfInventory("RustedScrap",1,1);
+			Goto CraftFail;
+			TNT1 A 0 A_JumpIfInventory("StrongChemFluid",1,1);
+			Goto CraftFail;
+			TNT1 A 0
+			{
+				A_SetBlend("Blue",0.25,10);
+				A_StartSound("Items/Bowl",CHAN_AUTO,CHANF_OVERLAP);
+				A_StartSound("Items/Bowl",CHAN_AUTO,CHANF_OVERLAP);
+				A_Print("Crafted an Iron Defense Coin.",1);
+				A_GiveInventory("IronDefenseCoin",1);
+				A_TakeInventory("RustedScrap",1);
+				A_TakeInventory("StrongChemFluid",1);
+				A_TakeInventory("Z_SelectedRustedScrap",1);
+				A_TakeInventory("Z_SelectedStrongChemFluid",1);
+			}
+			Fail;
+		CraftWoodenBoards:
+			TNT1 A 0 A_JumpIfInventory("RustedScrap",1,1);
+			Goto CraftFail;
+			TNT1 A 0 A_JumpIfInventory("WoodenScrap",1,1);
+			Goto CraftFail;
+			TNT1 A 0
+			{
+				A_SetBlend("Orange",0.25,10);
+				A_StartSound("Items/Bowl",CHAN_AUTO,CHANF_OVERLAP);
+				A_StartSound("Items/Bowl",CHAN_AUTO,CHANF_OVERLAP);
+				A_Print("Crafted a set of Wooden Boards.",1);
+				A_GiveInventory("WoodenBoards",1);
+				A_TakeInventory("RustedScrap",1);
+				A_TakeInventory("WoodenScrap",1);
+				A_TakeInventory("Z_SelectedRustedScrap",1);
+				A_TakeInventory("Z_SelectedWoodenScrap",1);
 			}
 			Fail;
 /*

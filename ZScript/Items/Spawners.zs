@@ -19,8 +19,12 @@ Class RE7RandomSpawner : RandomSpawner
 		DropItem "SolidFuel",190,10;
 		DropItem "EmptyHandgunAmmo",190,10;
 		DropItem "EmptyEnhancedHandgunAmmo",190,10;
-		DropItem "Steroids",190,10;
-		DropItem "Stabilizer",190,10;
+		DropItem "RustedScrap",190,10;
+		DropItem "WoodenScrap",190,10;
+		DropItem "DefenseCoin",190,10;
+		DropItem "IronDefenseCoin",190,10;
+		DropItem "AssaultCoin",190,10;
+		DropItem "WoodenBoards",190,10;
 	}
 }
 
@@ -35,6 +39,8 @@ Class RE7RandomSpawnerCommon : RandomSpawner
 		DropItem "Supplements",190,10;
 		DropItem "Gunpowder",190,10;
 		DropItem "SolidFuel",190,10;
+		DropItem "RustedScrap",190,10;
+		DropItem "WoodenScrap",190,10;
 	}
 }
 
@@ -56,6 +62,10 @@ Class RE7RandomSpawnerRare : RandomSpawner
 	{
 		DropItem "Steroids",190,10;
 		DropItem "Stabilizer",190,10;
+		DropItem "DefenseCoin",190,10;
+		DropItem "IronDefenseCoin",190,10;
+		DropItem "AssaultCoin",190,10;
+		DropItem "WoodenBoards",190,10;
 	}
 }
 
@@ -132,6 +142,50 @@ Class MedikitSpawner : Actor replaces Medikit
 				if (sv_re7_enableitemreplacements == 0)
 				{
 					A_SpawnItem("Medikit",1);
+				}
+				if (sv_re7_enableitemreplacements == 1)
+				{
+					A_SpawnItem("RE7RandomSpawner",1);
+					A_SpawnItem("RE7RandomSpawnerUncommon",1);
+					A_SpawnItem("RE7RandomSpawnerRare",1);
+				}
+			}
+			Stop;
+	}
+}
+
+Class GreenArmorSpawner : Actor replaces GreenArmor
+{
+	States
+	{
+		Spawn:
+			TNT1 A 0 NoDelay
+			{
+				if (sv_re7_enableitemreplacements == 0)
+				{
+					A_SpawnItem("GreenArmor",1);
+				}
+				if (sv_re7_enableitemreplacements == 1)
+				{
+					A_SpawnItem("RE7RandomSpawner",1);
+					A_SpawnItem("RE7RandomSpawnerUncommon",1);
+					A_SpawnItem("RE7RandomSpawnerRare",1);
+				}
+			}
+			Stop;
+	}
+}
+
+Class BlueArmorSpawner : Actor replaces BlueArmor
+{
+	States
+	{
+		Spawn:
+			TNT1 A 0 NoDelay
+			{
+				if (sv_re7_enableitemreplacements == 0)
+				{
+					A_SpawnItem("BlueArmor",1);
 				}
 				if (sv_re7_enableitemreplacements == 1)
 				{

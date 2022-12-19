@@ -5,7 +5,7 @@ Class Herb : CraftingItem
 	{
 		Inventory.Icon "HERBA0";
 		Inventory.PickupSound "Items/Grass";
-		Inventory.PickupMessage "An herb that can be found growing naturally in the Louisiana area.";
+		Inventory.PickupMessage "A herb that can be found growing naturally in the Louisiana area.";
 		Tag "Herb";
 	}
 	States
@@ -186,7 +186,7 @@ Class Psychostimulants : CraftingItem
 			{
 				A_Print("",0);
 				A_StartSound("Items/Pills",CHAN_AUTO,CHANF_OVERLAP);
-				A_GiveInventory("PowerPsychostimulants",1);
+				A_GiveInventory("PsychostimulantsItem",1);
 				A_TakeInventory("Psychostimulants",1);
 				A_TakeInventory("Z_SelectedPsychostimulants",1);
 			}
@@ -202,7 +202,7 @@ Class Steroids : CraftingItem
 		Inventory.PickupSound "Items/Generic";
 		Inventory.PickupMessage "A special syringe containing a yellow liquid.";
 		Tag "Steroids";
-		Scale 0.65;
+		Scale 0.75;
 	}
 	States
 	{
@@ -215,7 +215,7 @@ Class Steroids : CraftingItem
 			TNT1 A 0
 			{
 				A_SetBlend("Black",0.75,10);
-				A_StartSound("Items/PotionUp",CHAN_AUTO,CHANF_OVERLAP);
+				A_StartSound("Items/Generic",CHAN_AUTO,CHANF_OVERLAP);
 				A_Print("Dramatically strengthens muscles and increases max health. Effect lasts indefinitely.",4);
 				A_GiveInventory("Z_SelectedSteroids",1);
 			}
@@ -224,9 +224,7 @@ Class Steroids : CraftingItem
 			TNT1 A 0
 			{
 				A_Print("",0);
-				A_StartSound("Items/PotionUse",CHAN_AUTO,CHANF_OVERLAP);
-				A_GiveInventory("UpgradeStaminaRE7",sv_re7_steroidsupgradeamount);
-				A_TakeInventory("Steroids",1);
+				A_StartSound("Items/Generic",CHAN_AUTO,CHANF_OVERLAP);
 				A_TakeInventory("Z_SelectedSteroids",1);
 			}
 			Fail;
@@ -240,7 +238,7 @@ Class Stabilizer : CraftingItem
 		Inventory.Icon "SYR2A0";
 		Inventory.PickupSound "Items/Generic";
 		Inventory.PickupMessage "A special syringe containing a blue liquid.";
-		Scale 0.65;
+		Scale 0.75;
 		Tag "Stabilizer";
 	}
 	States
@@ -254,7 +252,7 @@ Class Stabilizer : CraftingItem
 			TNT1 A 0
 			{
 				A_SetBlend("Black",0.75,10);
-				A_StartSound("Items/PotionUp",CHAN_AUTO,CHANF_OVERLAP);
+				A_StartSound("Items/Generic",CHAN_AUTO,CHANF_OVERLAP);
 				A_Print("Relaxes the muscles and reduces stress,making reloading faster. Effect lasts indefinitely.",4);
 				A_GiveInventory("Z_SelectedStabilizer",1);
 			}
@@ -263,9 +261,7 @@ Class Stabilizer : CraftingItem
 			TNT1 A 0
 			{
 				A_Print("",0);
-				A_StartSound("Items/PotionUse",CHAN_AUTO,CHANF_OVERLAP);
-				A_GiveInventory("UpgradeStaminaRE7",sv_re7_stabilizerupgradeamount);
-				A_TakeInventory("Stabilizer",1);
+				A_StartSound("Items/Generic",CHAN_AUTO,CHANF_OVERLAP);
 				A_TakeInventory("Z_SelectedStabilizer",1);
 			}
 			Fail;
