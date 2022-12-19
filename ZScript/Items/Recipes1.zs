@@ -214,7 +214,7 @@ Class CraftingItem : BasicItem
 				A_TakeInventory("Z_SelectedChemFluid",1);
 			}
 			Fail;
-		CraftDefenseCoin:
+		CraftIronDefenseCoin:
 			TNT1 A 0 A_JumpIfInventory("RustedScrap",1,1);
 			Goto CraftFail;
 			TNT1 A 0 A_JumpIfInventory("StrongChemFluid",1,1);
